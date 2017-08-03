@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Zilla+Slab" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/font-awesome.css">
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/jquery.bxslider.min.js"></script>
+  <link href="css/jquery.bxslider.css" rel="stylesheet">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <div class="header">
+        <div class="header-top">
+          <div class="logo">
+            <img src="img/logo.png" alt="">
+            <div class="menu-sq">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+        <div class="head-text">
+          <h3>Lorem ipsum dolor sit amet</h3>
+          <span>consectetur adipisicing elit, sed do eiusmod tempor incididunt</span>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="nav">
+        <ul>
+          <li>home</li>
+          <li>products</li>
+          <li>news</li>
+          <li>about us</li>
+          <li>contact us</li>
+        </ul>
+        <div class="clearfix"></div>
+      </div>
+      <div class="pic-block">
+        <h5>featured Products</h5>
+        <div class="left-block">
+          <ul class="bxslider">
+            <li><img src="img/style.jpg">
+              <h3>Lorem ipsum dolor sit.</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </li>
+            <li><img src="img/style_2.jpg"></li>
+          </ul>
+        </div>
+        <div class="right-block">
+          <div><img src="img/style_2.jpg" alt="">
+            <p>The mission of Orlin Research, Inc. is to produce software products that multiply the power and efficiency of empirical scientific research in the social sciences. A central goal is to expand access to complex data sources and to the advanced
+              methods of scientific investigation needed to analyze them.</p>
+          </div>
+        </div>
+        <span class="more-row"></span>
+        <span class="more">More</span>
+        <div class="clearfix"></div>
+      </div>
+      <div class="col-3-block">
+        <div class="col-3">
+          <h3>Latest News</h3>
+          <div class="date">
+            <div class="number">
+              <p class="color-number">27</p>
+              <p class="text-number">now</p>
+            </div>
+            <div class="text">
+              <p class="white">An early access preview</p>
+              <p class="white-text">An early access preview of the Orlin Data Manager is available...</p>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+          <div class="date">
+            <div class="number">
+              <p class="color-number">27</p>
+              <p class="text-number">now</p>
+            </div>
+            <div class="text">
+              <p class="white">An early access preview</p>
+              <p class="white-text">An early access preview of the Orlin Data Manager is available...</p>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+          <div class="date">
+            <div class="number">
+              <p class="color-number">27</p>
+              <p class="text-number">now</p>
+            </div>
+            <div class="text">
+              <p class="white">An early access preview</p>
+              <p class="white-text">An early access preview of the Orlin Data Manager is available...</p>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+        <div class="col-3">
+          <h3>Who We are ?</h3>
+          <p class="col-text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <a href="">
+          <span class="more-row"></span>
+          <span class="more">More</span>
+          </a>
+        </div>
+        <div class="contact col-3">
+          <h3>Contact Us</h3>
+          <div class="list-contact">
+            <ul>
+              <li>Tel. +102939333</li>
+              <li>Fax. +102939333</li>
+              <li>E-mail lup@gmail.com</li>
+              <li>WS luprum.com</li>
+            </ul>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="clients">
+        <h5>Our Clients</h5>
+        <div class="clients_logo">
+          <div class="col-2-sm">
+            <img src="img/client-copy_01.png" alt="">
+            <img src="img/client-copy_02.png" alt="">
+            <img src="img/client-copy_03.png" alt="">
+          </div>
+          <div class="col-2-sm">
+            <img src="img/client-copy_04.png" alt="">
+            <img src="img/client-copy_05.png" alt="">
+            <img src="img/client-copy_06.png" alt="">
+            <div class="clearfix"></div>
+          </div>
+        </div>
+        <div class="footer">
+          <img src="img/logo.png" alt="">
+          <div class="cent">
+            <ul class="text-footer-li">
+              <li>Home</li>
+              <li>About us</li>
+              <li>work</li>
+              <li>services</li>
+              <li>resources</li>
+              <li>articles</li>
+              <li class="b-none">contact</li>
+              <div class="clearfix"></div>
+            </ul>
+          </div>
+          <p class="text-footer">© 2009 Orlin Research, Inc </p>
+        </div>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function() {
+        $('.menu-sq').click(function() {
+          $('.nav').slideToggle(500);
+        }); //end slide toggle
+        $('.bxslider').bxSlider();
+        $(window).resize(function() {
+          if ($(window).width() > 500) {
+            $('.nav').removeAttr('style');
+          }
+        }); //end resize
+      }); //end ready
+    </script>
+</body>
+</html>
